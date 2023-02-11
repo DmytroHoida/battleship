@@ -213,7 +213,7 @@ class Helpers {
     }
 
     static boolean validateUserInput(String userInput) {
-        Pattern pattern = Pattern.compile("^[A-G][0-9]$");
+        Pattern pattern = Pattern.compile("^[A-G][0-6]$");
         Matcher matcher = pattern.matcher(userInput);
         return matcher.find();
     }
